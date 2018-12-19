@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Crystal Guessing Game</title>
+
+
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  
+ 
+
+</head>
+<header>
+    <div class="header">
+        <h1>Crystal Collector!!</h1>
+    </div>
+    
+    <div class="rules">
+        <h2>
+            <span style="font-size: 18px">Here's how you play the game</span>
+        </h2>
+        <br>
+        <p>By clicking on a crystal, you will add a specific amount of points to your total score.</p>
+        <p>You win the game by matching your total score to the random crystal.</p>
+        <p>You lose the game if your total score goes above the random crystal.</p>
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+        <p>Each time when the game starts, the game will change the values of each crystal.</p>
+    </div>
+</header>
+
+<body>
+
+<div class="crystalToGuess">
+    <h3>
+        <span id="targetNum"></span>Target Number:23</h3>
+</div>
+
+
+<div id="crystals"></div>
+
+<div id="game">
+    <h4>Wins:
+        <span id="win"></span>
+        </br>
+        Losses:
+        <span id="loss"></span>
+    </h4>
+</div>
+
+<div class="totalScore">
+    <h5>Your total score is:
+        <span id="score"></span>
+    </h5>
+</div>
+
+
+<script type="text/javascript" src="./assets/js/game.js"></script>
+
+</body>
+
+</html>

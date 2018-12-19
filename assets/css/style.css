@@ -1,0 +1,48 @@
+body{
+	background-image: url("../image/background.jpg")
+}
+div.header{
+	background-color: plum;
+}
+div{
+	background-color: lightslategray;
+	margin: 5px;
+	width:40%;
+	border: solid 2px antiquewhite;
+	padding: 5px;
+}
+h1 {
+	font-weight: bold; 
+	text-align: center;
+	font-size: 20px;
+}
+h2{
+	font-weight: bold; 
+    text-align:center;
+}
+h3{
+    font-size:15px;
+    text-align:center;
+}
+h4{
+    font-size:15px;
+    text-align:center;
+}
+
+/* Classes */
+.crystal{
+	clear: both;
+}
+.crystalImage{
+	height: 60px;
+	margin: 10px;
+}  
+
+/* IDs */
+#crystals{
+	text-align: center;
+}
+#targetNum {
+	font-size:20px;
+	font-weight: bold;
+}
