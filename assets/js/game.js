@@ -60,8 +60,8 @@ $(document).ready(function () {
         $("#crystals").append(imageCrystal4);
     }
     // reset all global variables 
-    // variables starts working on
-    function reset() {
+    // variables starts working on screen
+    function initializeCrystal() {
         $("#score").text(counter);
         $("#win").text(wins);
         $("#loss").text(losses);
@@ -89,16 +89,17 @@ $(document).ready(function () {
             $("#win").text(win);
             alert("You won!");
             counter = 0;
-            reset();
+        
 
             //when player counter goes beyond the target number, the player lose. 
-            //reset the game 
+            
         } else if (counter > numberToGuess) {
             loss++;
             $("#loss").text(loss);
             alert("You lost!");
             counter = 0;
-            reset();
         }
+         //reset the game
+        initializeCrystal();
     });
 });
